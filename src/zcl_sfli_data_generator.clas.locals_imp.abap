@@ -15,7 +15,7 @@ CLASS lcl_agency_data_generator DEFINITION CREATE PRIVATE.
   PRIVATE SECTION.
     CONSTANTS:
       cv_numberrange_interval TYPE cl_numberrange_runtime=>nr_interval VALUE '01',
-      cv_numberrange_object   TYPE cl_numberrange_runtime=>nr_object   VALUE 'zsfli_AGNCY' ##NO_TEXT,
+      cv_numberrange_object   TYPE cl_numberrange_runtime=>nr_object   VALUE 'ZSFLI_AGY' ##NO_TEXT,
       cv_agency_minimum       TYPE z_sfli_agency_id VALUE '070001',
       cv_agency_maximum       TYPE z_sfli_agency_id VALUE '079999'.
     CLASS-DATA gt_data TYPE lcl_agency_data_generator=>tt_agency.
@@ -1586,7 +1586,7 @@ CLASS lcl_supplement_data_generator DEFINITION CREATE PRIVATE.
 
     CONSTANTS:
       cv_numberrange_interval TYPE cl_numberrange_runtime=>nr_interval VALUE '01',
-      cv_numberrange_object   TYPE cl_numberrange_runtime=>nr_object   VALUE 'zsfli_SUPPL' ##NO_TEXT.
+      cv_numberrange_object   TYPE cl_numberrange_runtime=>nr_object   VALUE 'ZSFLI_SPL' ##NO_TEXT.
 
     CLASS-DATA:
       gt_supplement_category TYPE tt_supplement_category_compl,
@@ -1911,7 +1911,7 @@ CLASS lcl_travel_data_generator DEFINITION CREATE PRIVATE.
       cv_booking_supplement_amount   TYPE i VALUE 5,
       cv_booking_days_before         TYPE i VALUE 15,
       cv_numberrange_interval        TYPE cl_numberrange_runtime=>nr_interval VALUE '01',
-      cv_numberrange_object          TYPE cl_numberrange_runtime=>nr_object   VALUE 'zsfli_TRAVL' ##NO_TEXT.
+      cv_numberrange_object          TYPE cl_numberrange_runtime=>nr_object   VALUE 'ZSFLI_TRV' ##NO_TEXT.
 
     CLASS-DATA:
       go_random_seats                TYPE REF TO cl_abap_random_int,
