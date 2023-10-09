@@ -5,7 +5,7 @@
    <VSEOCLASS>
     <CLSNAME>ZCL_SFLI_DATA_GENERATOR</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Flight Reference Scenario: Data Generator</DESCRIPT>
+    <DESCRIPT>Data Generator</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

@@ -85,10 +85,9 @@ CLASS zcl_sfli_data_generator IMPLEMENTATION.
 
 
   METHOD calculate_flight_price.
-*    rv_price = Z_SFLI_cl_flight_legacy=>calculate_flight_price(
-*                 iv_seats_occupied_percent = iv_seats_occupied_percent
-*                 iv_flight_distance        = iv_flight_distance
-*               ).
+    DATA lv_percentage_of_max_price TYPE i.
+    lv_percentage_of_max_price = ( 3 * iv_seats_occupied_percent ** 2 DIV 400 ) + 25 ##OPERATOR[**].
+    rv_price = lv_percentage_of_max_price * iv_flight_distance DIV 100.
   ENDMETHOD.
 
 
